@@ -2,8 +2,14 @@
 
 using namespace std;
 
+void DoPrint2() {
+    cout << "In DoPrint2()" << endl;
+}
+
 void DoPrint() {
-    cout << "In DoPrint()" << endl;
+    cout << "Starting DoPrint()" << endl;
+    DoPrint2();
+    cout << "Ending DoPrint()" << endl;
 }
 
 int main() {
