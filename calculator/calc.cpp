@@ -1,11 +1,11 @@
 #include <iostream>
-#include "calc.h"
+#include "math.h"
 
 using namespace std;
 
 int getNumInput() {
 
-    cout << 'Please enter an integer: ' << endl;
+    cout << "Please enter an integer: " << endl;
 
     int num;
     cin >> num;
@@ -15,7 +15,7 @@ int getNumInput() {
 
 char getOperation() {
 
-    cout << 'Please choose an operation (+, -, *, /, **, ^) ' << endl;
+    cout << "Please choose an operation (+, -, *, /)" << endl;
 
     char op;
     cin >> op;
@@ -39,7 +39,7 @@ int checkOperation(char op, int x, int y) {
         return divide(x, y);
         break;
     default:
-        cout << 'Operation not understood!' << endl;
+        cout << "Operation not understood!" << endl;
         return 0;
     }
 }
@@ -49,6 +49,7 @@ int main() {
     int x = getNumInput();
     char op = getOperation();
     int y = getNumInput();
+
     cout << checkOperation(op, x, y);
     return 0;
 }
