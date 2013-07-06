@@ -21,5 +21,15 @@ int main() {
     float x, y, z;        // Multiple declaration
     float a = 1, b = 2;   // Multiple declaration + assignment
 
+    cout << "bool:\t\t" << sizeof(boolean) << " bytes" << endl;
+    cout << "char:\t\t" << sizeof(character) << " bytes" << endl;
+    cout << "wchar_t:\t\t" << sizeof(wchr) << " bytes" << endl;
+    cout << "short:\t\t" << sizeof(shi) << " bytes" << endl;
+    cout << "int:\t\t" << sizeof(integer) << " bytes" << endl;
+    cout << "float:\t\t" << sizeof(fp) << " bytes" << endl;
+    cout << "long:\t\t" << sizeof(li) << " bytes" << endl;
+    cout << "double:\t\t" << sizeof(dbl) << " bytes" << endl;
+    cout << "long double:\t\t" << sizeof(ld) << " bytes" << endl;
+
     return 0;
 }
