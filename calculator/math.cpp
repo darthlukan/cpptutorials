@@ -21,7 +21,3 @@ int divide(int x, int y) {
         return x / y;
     }
 }
-
-int exponent(int x, int y) {
-    return x**y;
-}

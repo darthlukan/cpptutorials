@@ -5,7 +5,7 @@ using namespace std;
 
 int getNumInput() {
 
-    cout << "Please enter an integer: " << endl;
+    cout << 'Please enter an integer: ' << endl;
 
     int num;
     cin >> num;
@@ -15,7 +15,7 @@ int getNumInput() {
 
 char getOperation() {
 
-    cout << "Please choose an operation (+, -, *, /, **, ^) " << endl;
+    cout << 'Please choose an operation (+, -, *, /, **, ^) ' << endl;
 
     char op;
     cin >> op;
@@ -26,26 +26,20 @@ char getOperation() {
 int checkOperation(char op, int x, int y) {
 
     switch (op) {
-    case "+":
+    case '+':
         return add(x, y);
         break;
-    case "-":
+    case '-':
         return subtract(x, y);
         break;
-    case "*":
+    case '*':
         return multiply(x, y);
         break;
-    case "/":
+    case '/':
         return divide(x, y);
         break;
-    case "**":
-        return exponent(x, y);
-        break;
-    case "^":
-        return exponent(x, y);
-        break;
     default:
-        cout << "Operation not understood!" << endl;
+        cout << 'Operation not understood!' << endl;
         return 0;
     }
 }
